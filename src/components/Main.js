@@ -62,7 +62,7 @@ export default function Main(props) {
         console.log(index)
         console.log(document.getElementById("copy-btn-text-"+index))
         
-        navigator.clipboard.writeText(document.getElementById("copy-btn-text-"+index).inner).then(() => {
+        navigator.clipboard.writeText(document.getElementById("copy-btn-text-"+index).innerText).then(() => {
             
         },() => {
           // alert("no done")

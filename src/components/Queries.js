@@ -17,7 +17,7 @@ export default function Queries(props) {
                     {(props.f=="select") &&
                         <table id={`${props.mode=="light"?"table-light":"table-dark"}`}>
                         <tr>
-                            <th>Customner Id</th>
+                            <th>CustomnerId</th>
                             <th>CompanyName</th>
                             <th>Address</th>
                             <th>City</th>

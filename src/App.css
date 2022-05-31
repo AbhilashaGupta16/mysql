@@ -78,6 +78,18 @@ td, th {
   padding: 5px;
   color: #abb2bc;
 }
+.border1-light{
+  border:2px solid #c4d2db;
+}
+.border1-dark{
+  border:2px solid #67696b;
+}
+.h2-light{
+  color:black;
+}
+.h2-dark{
+  color:#afaeae;
+}
 .box{
   border:none;
   box-shadow: 5px 5px 25px -23px rgb(0 0 0 / 72%);
