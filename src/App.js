@@ -1,24 +1,60 @@
-import logo from './logo.svg';
 import './App.css';
 
+import React, { useState } from 'react'
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+import Navbar from "./components/Navbar"
+import Main from './components/Main';
+import Alert from './components/Alert';
+import Help from './components/Help';
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    const [alert,setAlert]=useState(null);
+
+    const showAlert =(msg,type)=>{
+      setAlert({
+        msg:msg,
+        type:type
+      })
+      setTimeout(() => {
+        setAlert(null)
+      }, 1500);
+    }
+
+    const [mode,setMode]=useState("light")
+    
+    function toogleMode(){
+      if(mode==="light"){
+        setMode("dark")
+        document.body.style.backgroundColor="#15191f";
+        
+      }
+      else{
+        setMode("light")
+        document.body.style.backgroundColor="#f3f5f7";
+      }
+    }
+
+     return (
+      <Router>
+      <div>
+        <Navbar mode={mode} toggleMode={toogleMode}/>
+        <Alert alert={alert}/>
+        <div>
+        <Routes>
+          <Route exact path="/" element={
+            <Main mode={mode} showAlert={showAlert}/>}/>
+          <Route exact path="/help" element={<Help mode={mode}/>} />
+        </Routes>
+        </div>
+        {/* <Main mode={mode}/> */}
+      </div>
+      </Router>
   );
 }
 
