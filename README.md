@@ -24,9 +24,9 @@ working. No backend or serach engine has the been integrated into it.
 ![guide-light](https://user-images.githubusercontent.com/56017536/171345317-b7bbb90e-1f65-43a4-8bf9-3d784990f7b3.png)
 
 ## Page Load Time :
-Load Time : 0.7611s
-Size : 2.580kb
-(calculated from [SmallSEOTools](https://snallSEOTools.com)
+1. Load Time : 0.7611s
+2. Size : 2.580kb
+Calculated from [SmallSEOTools](https://smallSEOTools.com) 
 
 ## 🔗 Website Hosted Url : Visit my [ MySql IDE](https://csb-uvvs9n.netlify.app/) here .
 
