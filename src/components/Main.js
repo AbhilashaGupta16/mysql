@@ -71,7 +71,7 @@ export default function Main(props) {
     }
   return (
     <div>
-        <div className="editor d-flex justify-content-center m-3 row">
+        <div className="editor d-flex justify-content-center mx-5 mt-5rem row">
             <div className="input col-lg-7 col-11 m-3 p-1">
                 <div className={`top ${props.mode==="light"?"label-light":"label-dark"} d-flex bg-grey py-1`}>
                     <div className="left w-50"><strong> Enter your query below</strong></div>

@@ -1,6 +1,9 @@
 body{
   background-color: #f3f5f7;
 }
+.mt-5rem{
+  margin-top: 5rem;
+}
 .w-10{
   width:20%;
 }
@@ -19,6 +22,12 @@ body{
 .scroll-x
 {
   width: 94%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.scroll-x2
+{
+  width: 79%;
   overflow-x: auto;
   white-space: nowrap;
 }

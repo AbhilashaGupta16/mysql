@@ -80,6 +80,33 @@ const arr=[
         "postalCode":"80805",
         "country":"Germany",
         "phone":"089-0877310"
+    },
+    {
+        "customnerId":"GODOS",
+        "companyName": "Godos Cocina Típica",
+        "address":"C/ Romero 333",
+        "city":"Sevilla",
+        "postalCode":"41101",
+        "country":"Spain",
+        "phone":"(95) 555 82 82"
+    },
+    {
+        "customnerId":"HUNGO",
+        "companyName": "Hungry Owl All-Night Grocers",
+        "address":"8 Johnstown Road",
+        "city":"Cork",
+        "postalCode":"NULL",
+        "country":"Ireland	",
+        "phone":"2967 542"
+    },
+    {
+        "customnerId":"LAMAI",
+        "companyName": "La maison d'Asie",
+        "address":"1 rue Alsace-Lorraine",
+        "city":"Toulouse",
+        "postalCode":"31000",
+        "country":"France	",
+        "phone":"61.77.61.10"
     }
 ];
 

@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 export default function (props) {
   return (
     <div>
-        <nav className={`navbar navbar-expand-lg navbar-dark ${props.mode==="light"?"light-navbar":"dark-navbar"}`}>
+        <nav className={`navbar fixed-top navbar-expand-lg navbar-dark ${props.mode==="light"?"light-navbar":"dark-navbar"}`}>
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">MySQL IDE</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,7 +16,7 @@ export default function (props) {
                     <Link to="/" className="nav-link active" aria-current="page">Home</Link>
                     </li>
                     <li className="nav-item">
-                    <Link to="/help" className="nav-link">Help/Guide</Link>
+                    <Link to="/help" className="nav-link">Guide</Link>
                     </li>
                 </ul>
                 <form className="d-flex" role="search">
