@@ -5,7 +5,7 @@ import Data from './Data'
 export default function Queries(props) {
     // const data=Data
     // const arr=data.type
-    // console.log(Data)
+    //  console.log(Data)
   return (
     <div>
         <div className="result d-flex justify-content-center m-3 row">
@@ -53,9 +53,9 @@ export default function Queries(props) {
                         <p>SQL &gt; Entry Deleted Successfully</p>
                      </div> 
                      }
-                     {(props.f=="update" ||props.f=="drop"||props.f=="alter") &&
+                     {(props.f!="update" && props.f!="drop" && props.f!="alter") &&
                      <div className="update ">
-                        <p>SQL &gt; Table {props.f}d.</p>
+                        <p>SQL &gt; Table {props.q}d.</p>
                      </div> 
                      }
                 </div>
