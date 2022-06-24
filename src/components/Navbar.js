@@ -22,7 +22,7 @@ export default function (props) {
                 <form className="d-flex" role="search">
                     <div className="form-check form-switch">
                         <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={props.toggleMode}/>
-                        <label className="form-check-label text-light" htmlFor="flexSwitchCheckDefault" >{props.mode}</label>
+                        <label className="form-check-label text-light" htmlFor="flexSwitchCheckDefault" >{props.mode} mode</label>
                     </div>
                 </form>
                 </div>
