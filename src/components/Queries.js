@@ -53,10 +53,15 @@ export default function Queries(props) {
                         <p>SQL &gt; Entry Deleted Successfully</p>
                      </div> 
                      }
-                     {(props.f!="update" && props.f!="drop" && props.f!="alter") &&
+                     {(props.f=="update" || props.f=="drop" || props.f=="alter") &&
                      <div className="update ">
                         <p>SQL &gt; Table {props.q}d.</p>
                      </div> 
+                     }{
+                        (props.f!="update" && props.f!="drop" && props.f!="alter" && props.f!="select" && props.f!="delete" && props.f!="create") && props.f!="insert" &&
+                        <div className="update ">
+                           <p>SQL &gt; No such command found.</p>
+                        </div> 
                      }
                 </div>
             </div>
